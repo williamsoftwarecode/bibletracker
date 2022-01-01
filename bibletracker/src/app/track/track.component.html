@@ -2,7 +2,34 @@
     <h1>Bible Books</h1>
     <br>
     <h3>Select your book for today: </h3>
-    <ul *ngFor="let bibleChapter of bibleChapters">
-        <li>{{ bibleChapter.book }}</li>
-    </ul>
+    
+
+    <div class="row">
+        <div class="col">
+            <br>
+            <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
+                <button mat-raised-button *ngIf="i >= 0 && i < 13">{{ bibleChapter.book }}</button>
+            </ul>
+        </div>
+        <div class="col">
+            <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
+                <button mat-raised-button *ngIf="i >= 13 && i < 26">{{ bibleChapter.book }}</button>
+            </ul>
+        </div>
+        <div class="col">
+            <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
+                <button mat-raised-button *ngIf="i >= 26 && i < 39">{{ bibleChapter.book }}</button>
+            </ul>
+        </div>
+        <div class="col">
+            <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
+                <button mat-raised-button *ngIf="i >= 39 && i < 52">{{ bibleChapter.book }}</button>
+            </ul>
+        </div>
+        <div class="col">
+            <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
+                <button mat-raised-button *ngIf="i >= 52 && i < 66">{{ bibleChapter.book }}</button>
+            </ul>
+        </div>
+    </div>
 </div>
