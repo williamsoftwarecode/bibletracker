@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TrackComponent } from './track/track.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TrackComponent } from './track/track.component';
     BrowserModule,
     AppRoutingModule, 
     FormsModule, 
-    HttpClientModule
+    HttpClientModule, 
+    BrowserAnimationsModule, 
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
