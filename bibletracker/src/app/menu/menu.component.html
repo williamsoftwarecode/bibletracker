@@ -1,7 +1,8 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">CodeWilliam</a>
+            <a class="navbar-brand" routerLink="login" *ngIf=!loggedIn()>Bible Tracker</a>
+            <a class="navbar-brand" [routerLink]="'/welcome/' + getUsername()" *ngIf=loggedIn()>Bible Tracker</a>
             
             <div class="navbar-nav">
                 <a class="nav-link" [routerLink]="'/welcome/' + getUsername()" *ngIf=loggedIn()>Home</a>

@@ -23,12 +23,14 @@ export class LoginComponent implements OnInit {
   }
 
   handleLogin(): void {
-    if (this.hardcodedAuthenticationService.authenticate(this.username, this.password)) {
-      this.displayInvalidMessage = false; 
-      this.router.navigate(["welcome", this.username]);
-    } else {
-      this.displayInvalidMessage = true;
-    }
+    this.hardcodedAuthenticationService.authenticate(this.username, this.password).subscribe(
+      response => {
+        if (response) {
+          this.displayInvalidMessage = false; 
+          this.router.navigate(["welcome", this.username]);
+        } else {
+          this.displayInvalidMessage = true;
+        }
+      }); 
   }
-
 }

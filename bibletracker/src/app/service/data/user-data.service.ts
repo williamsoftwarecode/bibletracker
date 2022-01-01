@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class UserDataService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
+
+  authenticateLogin(username: string, password: string) {
+    return this.httpClient.get<boolean>(`http://localhost:8080/login/${username}/${password}`);
+  }
 }

@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { UserDataService } from './data/user-data.service';
 
 @Injectable({
   providedIn: 'root'
@@ -7,15 +9,18 @@ export class HardCodedAuthenticationService {
 
   key = "authenticatedUser";
 
-  constructor() { }
+  constructor(private userService: UserDataService) { }
 
-  authenticate(username: string, password: string) {
-    if (username === "Angular" && password === "test") {
-      sessionStorage.setItem(this.key, username); 
-      return true; 
-    } else {
-      return false;
-    }
+  authenticate(username: string, password: string): Observable<any> {
+    let authentication = this.userService.authenticateLogin(username, password);
+    authentication.subscribe(
+      response => {
+        if (response) {
+          sessionStorage.setItem(this.key, username); 
+        } 
+      }
+    );
+    return authentication;
   }
 
   isUserLoggedIn() {
