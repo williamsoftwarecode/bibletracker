@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h1>Login</h1>
+    
+    <br>
+    
+    <div>
+        Username: <input type="text" name="username" [(ngModel)]="username">
+        <br><br>
+        Password: <input type="password" name="password" [(ngModel)]="password">
+        <br><br><br>
+    </div>
+
+    <div>
+        <button class="btn btn-primary" (click)=handleLogin()>Login</button>
+        <br><br>
+    </div>
+
+    <div class="alert alert-warning" *ngIf="displayInvalidMessage">
+        {{ invalidMessage }}
+    </div>
+</div>

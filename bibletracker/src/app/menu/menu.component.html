@@ -1,0 +1,17 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">CodeWilliam</a>
+            
+            <div class="navbar-nav">
+                <a class="nav-link" [routerLink]="'/welcome/' + getUsername()" *ngIf=loggedIn()>Home</a>
+                <a class="nav-link" routerLink="history" *ngIf=loggedIn()>History</a>
+            </div>
+            
+            <div class="navbar-nav navbar-collapse justify-content-end">
+                <a class="nav-link" routerLink="login" *ngIf=!loggedIn()>Login</a>
+                <a class="nav-link" routerLink="logout" *ngIf=loggedIn()>Logout</a>
+            </div>
+        </div>
+    </nav>
+</header>
