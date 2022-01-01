@@ -5,12 +5,14 @@ import { HistoryComponent } from './history/history.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { RouteGuardService } from './service/route-guard.service';
+import { TrackComponent } from './track/track.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "login", component: LoginComponent },
   { path: "welcome/:name", component: WelcomeComponent, canActivate:[RouteGuardService]},
+  { path: "track", component: TrackComponent, canActivate:[RouteGuardService]},
   // { path: "todos", component: ListTodosComponent, canActivate:[RouteGuardService]},
   { path: "history", component: HistoryComponent, canActivate:[RouteGuardService] },
   { path: "logout", component: LogoutComponent, canActivate:[RouteGuardService] },

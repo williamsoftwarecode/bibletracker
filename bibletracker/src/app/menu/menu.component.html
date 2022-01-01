@@ -6,6 +6,7 @@
             
             <div class="navbar-nav">
                 <a class="nav-link" [routerLink]="'/welcome/' + getUsername()" *ngIf=loggedIn()>Home</a>
+                <a class="nav-link" routerLink="track" *ngIf=loggedIn()>Track!</a>
                 <a class="nav-link" routerLink="history" *ngIf=loggedIn()>History</a>
             </div>
             

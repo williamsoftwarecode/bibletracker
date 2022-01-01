@@ -12,6 +12,7 @@ import { HistoryComponent } from './history/history.component';
 import { FormsModule } from '@angular/forms';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TrackComponent } from './track/track.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     FooterComponent,
     HistoryComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TrackComponent
   ],
   imports: [
     BrowserModule,
