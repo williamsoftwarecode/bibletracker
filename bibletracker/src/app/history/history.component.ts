@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReadingDataService } from '../service/data/reading-data.service';
+import { HardCodedAuthenticationService } from '../service/hard-coded-authentication.service';
 
 export class Reading {
   constructor(
@@ -17,13 +19,21 @@ export class Reading {
 })
 export class HistoryComponent implements OnInit {
 
-  readings = [
-    new Reading(1, new Date, "Learn Angular", "Learn Angular", 1)
-  ];
+  readings : Reading[];
+    // new Reading(1, new Date, "Learn Angular", "Learn Angular", 1)
 
-  constructor() { }
+  constructor(
+    private hardCodedAuthenticationService: HardCodedAuthenticationService,
+    private readingService: ReadingDataService) { }
 
   ngOnInit(): void {
+    let username = this.hardCodedAuthenticationService.getCurrentUser();
+
+    this.readingService.retrieveAllReadings(username).subscribe(
+      response => {
+        this.readings = response;
+      }
+    );
   }
 
 }
