@@ -5,6 +5,7 @@ import { ErrorComponent } from './error/error.component';
 import { HistoryComponent } from './history/history.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ProgressComponent } from './progress/progress.component';
 import { RouteGuardService } from './service/route-guard.service';
 import { TrackComponent } from './track/track.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: "track", component: TrackComponent, canActivate:[RouteGuardService]},
   { path: "track/:bookName", component: ChaptersComponent, canActivate:[RouteGuardService]},
   { path: "history", component: HistoryComponent, canActivate:[RouteGuardService] },
+  { path: "progress", component: ProgressComponent, canActivate:[RouteGuardService] },
   { path: "logout", component: LogoutComponent, canActivate:[RouteGuardService] },
   { path: "**", component: ErrorComponent },
 ];
