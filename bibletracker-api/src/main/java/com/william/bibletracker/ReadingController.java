@@ -24,6 +24,12 @@ public class ReadingController {
     @Autowired
     ReadingRepository readingRepository;
 
+    /*
+    Note:   Not best practice - URL resource names should be nouns
+            Would have been better to standardized it as "/read" and delegate function to HTTP method
+            This is just a prototype
+     */
+
     @PostMapping(value = "/addRead/{username}/{book}/{chapter}")
     public boolean addRead(@PathVariable String username,
                         @PathVariable String book,
@@ -31,6 +37,20 @@ public class ReadingController {
         if (userRepository.getByUsername(username) != null &&
                 readingRepository.getReading(username, book, chapter) == null) {
             readingRepository.save(new Reading(new Date(), username, book, chapter));
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @DeleteMapping(value = "/deleteRead/{username}/{book}/{chapter}")
+    public boolean deleteRead(@PathVariable String username,
+                              @PathVariable String book,
+                              @PathVariable int chapter) {
+        Reading reading = readingRepository.getReading(username, book, chapter);
+        if (userRepository.getByUsername(username) != null &&
+                reading!= null) {
+            readingRepository.delete(reading);
             return true;
         } else {
             return false;

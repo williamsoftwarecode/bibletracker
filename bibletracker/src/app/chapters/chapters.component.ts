@@ -59,15 +59,30 @@ export class ChaptersComponent implements OnInit {
       if (index !== -1) {
         this.readChapters.splice(index, 1);
       }
-      console.log("Read => Not read");
-      console.log(this.readChapters); 
+
+      this.readingService.deleteReadChapter(this.currentUser, this.bookName, chapter).subscribe(
+        response => {
+          if (response) {
+            console.log("Read => Not read");
+            console.log(this.readChapters); 
+          } else {
+            console.log("Unsuccessful")
+          }
+        }
+      );
     } else {
       this.readChapters.push(chapter);
+      
       this.readingService.addReadChapter(this.currentUser, this.bookName, chapter).subscribe(
-        response => {}
+        response => {
+          if (response) {
+            console.log("Not read => Read");
+            console.log(this.readChapters); 
+          } else {
+            console.log("Unsuccessful")
+          }
+        }
       );
-      console.log("Not read => Read");
-      console.log(this.readChapters); 
     }
   }
 

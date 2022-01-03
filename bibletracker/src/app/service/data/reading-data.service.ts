@@ -29,4 +29,8 @@ export class ReadingDataService {
   addReadChapter(username: string, book: string, chapter: number) {
     return this.httpClient.post(`http://localhost:8080/addRead/${username}/${book}/${chapter}`, "");
   }
+
+  deleteReadChapter(username: string, book: string, chapter: number) {
+    return this.httpClient.delete(`http://localhost:8080/deleteRead/${username}/${book}/${chapter}`);
+  }
 }
