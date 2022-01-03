@@ -1,5 +1,33 @@
 <div class="container mt-5">
     <h1>Welcome {{ name }}!</h1>
     <br>
-    <p>Click <a routerLink="/history">here</a> to view your reading history!</p>
+
+    <div class="row">
+        <div class="col">
+            <div class="card col">
+                <h2 class="card-header text-center" routerLink="/track">Daily Reading</h2>
+                <div class="card-body">
+                    <p>Your last read is: </p>
+
+                    <p>Track your daily reading by clicking on your book and select your chapter you desire to read today. This will add it to your daily reading history.</p>
+                    <p>Click <a routerLink="/track">here</a> to start tracking your daily Bible reading!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h2 class="card-header text-center" routerLink="/history">History</h2>
+                <div class="card-body">
+                    <p>Click <a routerLink="/history">here</a> to view your daily Bible reading history!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card col">
+                <h2 class="card-header text-center">Progress</h2>
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

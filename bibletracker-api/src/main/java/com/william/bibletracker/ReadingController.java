@@ -69,6 +69,11 @@ public class ReadingController {
         return readingRepository.findAllByUsernameAndBook(username, book);
     }
 
+    @GetMapping(value = "/getLastRead/{username}")
+    public Reading getLastRead(@PathVariable String username) {
+        return readingRepository.findMostRecentByUsername(username);
+    }
+
     @GetMapping(value = "/getBible")
     public List<BibleChapters> getBible() {
         return bibleRepository.findAll();

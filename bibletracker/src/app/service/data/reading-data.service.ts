@@ -33,4 +33,8 @@ export class ReadingDataService {
   deleteReadChapter(username: string, book: string, chapter: number) {
     return this.httpClient.delete(`http://localhost:8080/deleteRead/${username}/${book}/${chapter}`);
   }
+
+  retrieveLastReadByUser(username: string) {
+    return this.httpClient.get(`http://localhost:8080/getLastRead/${username}`);
+  }
 }
