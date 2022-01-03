@@ -7,8 +7,9 @@
             <div class="card">
                 <h2 class="card-header text-center" routerLink="/track">Track!</h2>
                 <div class="card-body">
-                    <p>Your last reading was: </p>
-
+                    <span *ngIf="lastReadDate">
+                        <h2>Last read: <br> {{ lastReadDate | date: "MMM, d yyyy @ HH:mm:ss" }} <br> {{ lastReadBook }} {{ lastReadChapter }}</h2>
+                    </span>
                     <p>Track your daily reading by clicking on the book and select the chapter you desire to read today. This will add it to your daily reading history.</p>
                     <br>
                     <img class="img-fluid" routerLink="/track" src="../../assets/track-example.jpg">

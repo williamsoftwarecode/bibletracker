@@ -25,7 +25,7 @@ public interface ReadingRepository extends JpaRepository<Reading, Long> {
     List<Reading> findAllByUsernameAndBook(String username, String book);
 
     @Query(
-            value = "SELECT * FROM reading WHERE username = ?1 ORDER BY date LIMIT 1",
+            value = "SELECT * FROM reading WHERE username = ?1 ORDER BY date DESC LIMIT 1",
             nativeQuery = true)
     Reading findMostRecentByUsername(String username);
 }
