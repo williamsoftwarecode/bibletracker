@@ -12,7 +12,8 @@ export class ProgressComponent implements OnInit {
 
   currentUser: string = "";
   numberCompletedChapters: number = 0;
-  percentCompletedChapters: string;
+  percentCompletedChapsStr: string;
+  percentCompletedChapsNum: number;
 
   constructor(
     private hardCodedAuthenticationService: HardCodedAuthenticationService,
@@ -24,7 +25,8 @@ export class ProgressComponent implements OnInit {
     this.readingService.getCompletedChaptersByUser(this.currentUser).subscribe(
       response => {
         this.numberCompletedChapters = response
-        this.percentCompletedChapters = (Math.round(response / 1189 * 100 * 100) / 100).toFixed(2);
+        this.percentCompletedChapsNum = response / 1189;
+        this.percentCompletedChapsStr = (Math.round(response / 1189 * 100 * 100) / 100).toFixed(2);
       }
     ); 
   }
