@@ -1,21 +1,28 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
-export class BibleChapters {
-  constructor(
-    public book: string, 
-    public chapter: number
-  ) { }
-}
+import { Observable, of } from 'rxjs';
+import { BibleChapters } from 'src/app/class/bible-chapters';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BibleChaptersDataService {
 
+  allBibleChapters: BibleChapters[] = [];
+
   constructor(private httpClient: HttpClient) { }
 
   retrieveBibleBooks() {
-    return this.httpClient.get<BibleChapters[]>("http://localhost:8080/getBible");
+    if (this.allBibleChapters.length === 0) {
+      let obsBibleChapters = this.httpClient.get<BibleChapters[]>("http://localhost:8080/getBible");
+      obsBibleChapters.subscribe(
+        response => this.allBibleChapters = response
+      );
+
+      return obsBibleChapters;
+    }
+
+    console.log("HERE2")
+    return of(this.allBibleChapters);
   }
 }

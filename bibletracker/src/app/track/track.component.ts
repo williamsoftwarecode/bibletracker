@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BibleChapters } from '../class/bible-chapters';
 import { BibleChaptersDataService } from '../service/data/bible-chapters-data.service';
-
-export class BibleChapters {
-  constructor(
-    public book: string, 
-    public chapter: number
-  ) { }
-}
 
 @Component({
   selector: 'app-track',

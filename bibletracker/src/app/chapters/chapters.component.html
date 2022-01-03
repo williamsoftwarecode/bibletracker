@@ -1,5 +1,13 @@
 <div class="container mt-5">
     <h1>{{ chapterName }}</h1>
     <br>
-    <p>Click <a routerLink="/history">here</a> to view your reading history!</p>
+
+    <div class="card">
+        <h3 class="card-header">Chapters</h3>
+        <div class="card-body">
+            <ul *ngFor="let chapter of chapterArray">
+                <li>{{ chapter }}</li>
+            </ul>
+        </div>
+    </div>
 </div>
