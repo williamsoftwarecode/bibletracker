@@ -17,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { ChaptersComponent } from './chapters/chapters.component'; 
 import { MatButtonToggleModule } from '@angular/material/button-toggle'; 
-import { MatSortModule } from '@angular/material/sort'; 
+import { MatSortModule } from '@angular/material/sort';
+import { ProgressComponent } from './progress/progress.component'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MatSortModule } from '@angular/material/sort';
     HistoryComponent,
     WelcomeComponent,
     TrackComponent,
-    ChaptersComponent
+    ChaptersComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
