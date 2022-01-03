@@ -25,4 +25,8 @@ export class ReadingDataService {
   retrieveReadingsByBook(username: string, book: string) {
     return this.httpClient.get<Reading[]>(`http://localhost:8080/getChaptersReadByBook/${username}/${book}`)
   }
+
+  addReadChapter(username: string, book: string, chapter: number) {
+    return this.httpClient.post(`http://localhost:8080/addRead/${username}/${book}/${chapter}`, "");
+  }
 }

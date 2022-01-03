@@ -13,10 +13,10 @@ import { HardCodedAuthenticationService } from '../service/hard-coded-authentica
 export class ChaptersComponent implements OnInit {
 
   bookName = "";
+  currentUser = "";
   totalChapters = 0;
-  allChapters: number[] = [];
-
   bibleChapters: BibleChapters[];
+  allChapters: number[] = [];
   readChapters: number[] = [];
 
   constructor(
@@ -27,8 +27,9 @@ export class ChaptersComponent implements OnInit {
 
   ngOnInit(): void {
     this.bookName = this.route.snapshot.params["bookName"];
+    this.currentUser = this.hardCodedAuthenticationService.getCurrentUser();
     
-    this.readingService.retrieveReadingsByBook(this.hardCodedAuthenticationService.getCurrentUser(), this.bookName).subscribe(
+    this.readingService.retrieveReadingsByBook(this.currentUser, this.bookName).subscribe(
       response => {
         let readResponse = response;
         readResponse.forEach(bc => this.readChapters.push(bc.chapter));
@@ -50,7 +51,24 @@ export class ChaptersComponent implements OnInit {
   }
 
   onChange($event: { value: any; }) {
-    console.log($event.value);
+    let chapter = $event.value; 
+
+    // Read => Not Read
+    if (this.readChapters.indexOf(chapter) != -1) {
+      var index = this.readChapters.indexOf(chapter);
+      if (index !== -1) {
+        this.readChapters.splice(index, 1);
+      }
+      console.log("Read => Not read");
+      console.log(this.readChapters); 
+    } else {
+      this.readChapters.push(chapter);
+      this.readingService.addReadChapter(this.currentUser, this.bookName, chapter).subscribe(
+        response => {}
+      );
+      console.log("Not read => Read");
+      console.log(this.readChapters); 
+    }
   }
 
   isRead(chapter: number): boolean {
