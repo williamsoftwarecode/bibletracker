@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { ChaptersComponent } from './chapters/chapters.component'; 
 import { MatButtonToggleModule } from '@angular/material/button-toggle'; 
+import { MatSortModule } from '@angular/material/sort'; 
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     HttpClientModule, 
     BrowserAnimationsModule, 
     MatButtonModule, 
-    MatButtonToggleModule
+    MatButtonToggleModule, 
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,16 +1,16 @@
 <div class="container mt-5">
     <h1>Reading History</h1>
-    <table class="table">
+    <table class="table" matSort (matSortChange)="sortData($event)">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Date</th>
-                <th>Book</th>
+                <th mat-sort-header="date">Date</th>
+                <th mat-sort-header="book">Book</th>
                 <th>Chapter</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let reading of readings; index as i">
+            <tr *ngFor="let reading of sortedData; index as i">
                 <td style="width: 10%">{{ i+1 }}</td>
                 <td style="width: 25%">{{ reading.date | date: "MMM, d yyyy @ HH:mm:ss" }}</td>
                 <td style="width: 20%">{{ reading.book }}</td>
