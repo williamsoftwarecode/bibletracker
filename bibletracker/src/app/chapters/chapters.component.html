@@ -5,9 +5,34 @@
     <div class="card">
         <h3 class="card-header">Chapters</h3>
         <div class="card-body">
-            <ul *ngFor="let chapter of chapterArray">
-                <li>{{ chapter }}</li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <ul *ngFor="let chapter of chapterArray">
+                        <mat-button-toggle *ngIf="chapter%5 === 1">{{ chapter }}</mat-button-toggle>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul *ngFor="let chapter of chapterArray">
+                        <mat-button-toggle *ngIf="chapter%5 === 2">{{ chapter }}</mat-button-toggle>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul *ngFor="let chapter of chapterArray">
+                        <mat-button-toggle *ngIf="chapter%5 === 3">{{ chapter }}</mat-button-toggle>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul *ngFor="let chapter of chapterArray">
+                        <mat-button-toggle *ngIf="chapter%5 === 4">{{ chapter }}</mat-button-toggle>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul *ngFor="let chapter of chapterArray">
+                        <mat-button-toggle *ngIf="chapter%5 === 0">{{ chapter }}</mat-button-toggle>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

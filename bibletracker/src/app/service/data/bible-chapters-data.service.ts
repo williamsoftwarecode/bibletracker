@@ -22,7 +22,6 @@ export class BibleChaptersDataService {
       return obsBibleChapters;
     }
 
-    console.log("HERE2")
     return of(this.allBibleChapters);
   }
 }

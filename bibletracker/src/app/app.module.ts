@@ -16,6 +16,7 @@ import { TrackComponent } from './track/track.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { ChaptersComponent } from './chapters/chapters.component'; 
+import { MatButtonToggleModule } from '@angular/material/button-toggle'; 
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ChaptersComponent } from './chapters/chapters.component';
     FormsModule, 
     HttpClientModule, 
     BrowserAnimationsModule, 
-    MatButtonModule
+    MatButtonModule, 
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
