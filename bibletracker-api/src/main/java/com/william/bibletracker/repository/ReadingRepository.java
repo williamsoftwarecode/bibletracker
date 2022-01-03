@@ -28,4 +28,9 @@ public interface ReadingRepository extends JpaRepository<Reading, Long> {
             value = "SELECT * FROM reading WHERE username = ?1 ORDER BY date DESC LIMIT 1",
             nativeQuery = true)
     Reading findMostRecentByUsername(String username);
+
+    @Query(
+            value = "SELECT COUNT(*) FROM reading WHERE username = ?1",
+            nativeQuery = true)
+    long getCompletedChaptersForUser(String username);
 }

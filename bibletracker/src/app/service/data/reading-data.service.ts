@@ -30,6 +30,10 @@ export class ReadingDataService {
     return this.httpClient.get<Reading>(`http://localhost:8080/getLastRead/${username}`);
   }
 
+  getCompletedChaptersByUser(username: string) {
+    return this.httpClient.get<number>(`http://localhost:8080/getCompletedChapters/${username}`);
+  }
+
   addReadChapter(username: string, book: string, chapter: number) {
     return this.httpClient.post(`http://localhost:8080/addRead/${username}/${book}/${chapter}`, "");
   }
