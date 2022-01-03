@@ -14,7 +14,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TrackComponent } from './track/track.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button';
+import { ChaptersComponent } from './chapters/chapters.component'; 
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatButtonModule } from '@angular/material/button';
     FooterComponent,
     HistoryComponent,
     WelcomeComponent,
-    TrackComponent
+    TrackComponent,
+    ChaptersComponent
   ],
   imports: [
     BrowserModule,

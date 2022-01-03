@@ -9,7 +9,6 @@ import { ActivatedRoute } from '@angular/router';
 export class WelcomeComponent implements OnInit {
 
   name = "";
-  welcomeMessageFromService: string;
 
   constructor(
     private route: ActivatedRoute
