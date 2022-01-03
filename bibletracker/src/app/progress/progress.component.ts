@@ -26,7 +26,7 @@ export class ProgressComponent implements OnInit {
       response => {
         this.numberCompletedChapters = response
         this.percentCompletedChapsNum = response / 1189;
-        this.percentCompletedChapsStr = (Math.round(response / 1189 * 100 * 100) / 100).toFixed(2);
+        this.percentCompletedChapsStr = (Math.round(this.percentCompletedChapsNum * 100 * 100) / 100).toFixed(2);
       }
     ); 
   }
