@@ -21,4 +21,8 @@ export class ReadingDataService {
   retrieveAllReadings(username: string) {
     return this.httpClient.get<Reading[]>(`http://localhost:8080/getAllRead/${username}`);
   }
+
+  retrieveReadingsByBook(username: string, book: string) {
+    return this.httpClient.get<Reading[]>(`http://localhost:8080/getChaptersReadByBook/${username}/${book}`)
+  }
 }

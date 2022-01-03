@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "welcome/:name", component: WelcomeComponent, canActivate:[RouteGuardService]},
   { path: "track", component: TrackComponent, canActivate:[RouteGuardService]},
-  { path: "track/:chapterName", component: ChaptersComponent, canActivate:[RouteGuardService]},
+  { path: "track/:bookName", component: ChaptersComponent, canActivate:[RouteGuardService]},
   { path: "history", component: HistoryComponent, canActivate:[RouteGuardService] },
   { path: "logout", component: LogoutComponent, canActivate:[RouteGuardService] },
   { path: "**", component: ErrorComponent },

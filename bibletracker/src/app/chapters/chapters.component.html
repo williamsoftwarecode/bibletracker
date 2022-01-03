@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h1>{{ chapterName }}</h1>
+    <h1>{{ bookName }}</h1>
     <br>
 
     <div class="card">
@@ -8,28 +8,28 @@
             <div class="row">
                 <div class="col">
                     <br>
-                    <ul *ngFor="let chapter of chapterArray">
-                        <mat-button-toggle *ngIf="chapter%5 === 1">{{ chapter }}</mat-button-toggle>
+                    <ul *ngFor="let chapter of allChapters">
+                        <mat-button-toggle [value]="chapter" (change)="onChange($event)" [checked]="isRead(chapter)" *ngIf="chapter%5 === 1">{{ chapter }}</mat-button-toggle>
                     </ul>
                 </div>
                 <div class="col">
-                    <ul *ngFor="let chapter of chapterArray">
-                        <mat-button-toggle *ngIf="chapter%5 === 2">{{ chapter }}</mat-button-toggle>
+                    <ul *ngFor="let chapter of allChapters">
+                        <mat-button-toggle [value]="chapter" (change)="onChange($event)" [checked]="isRead(chapter)" *ngIf="chapter%5 === 2">{{ chapter }}</mat-button-toggle>
                     </ul>
                 </div>
                 <div class="col">
-                    <ul *ngFor="let chapter of chapterArray">
-                        <mat-button-toggle *ngIf="chapter%5 === 3">{{ chapter }}</mat-button-toggle>
+                    <ul *ngFor="let chapter of allChapters">
+                        <mat-button-toggle [value]="chapter" (change)="onChange($event)" [checked]="isRead(chapter)" *ngIf="chapter%5 === 3">{{ chapter }}</mat-button-toggle>
                     </ul>
                 </div>
                 <div class="col">
-                    <ul *ngFor="let chapter of chapterArray">
-                        <mat-button-toggle *ngIf="chapter%5 === 4">{{ chapter }}</mat-button-toggle>
+                    <ul *ngFor="let chapter of allChapters">
+                        <mat-button-toggle [value]="chapter" (change)="onChange($event)" [checked]="isRead(chapter)" *ngIf="chapter%5 === 4">{{ chapter }}</mat-button-toggle>
                     </ul>
                 </div>
                 <div class="col">
-                    <ul *ngFor="let chapter of chapterArray">
-                        <mat-button-toggle *ngIf="chapter%5 === 0">{{ chapter }}</mat-button-toggle>
+                    <ul *ngFor="let chapter of allChapters">
+                        <mat-button-toggle [value]="chapter" (change)="onChange($event)" [checked]="isRead(chapter)" *ngIf="chapter%5 === 0">{{ chapter }}</mat-button-toggle>
                     </ul>
                 </div>
             </div>
