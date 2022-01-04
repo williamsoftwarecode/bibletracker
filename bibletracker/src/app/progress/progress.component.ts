@@ -24,8 +24,8 @@ export class ProgressComponent implements OnInit {
     this.readingService.getCompletedChaptersByUser(this.currentUser).subscribe(
       response => {
         this.numberCompletedChapters = response
-        this.percentCompletedChapsNum = response / 1189;
-        this.percentCompletedChapsStr = (Math.round(this.percentCompletedChapsNum * 100 * 100) / 100).toFixed(2);
+        this.percentCompletedChapsNum = (Math.round(response / 1189 * 100 * 100) / 100);
+        this.percentCompletedChapsStr = this.percentCompletedChapsNum.toFixed(2);
       }
     ); 
   }
