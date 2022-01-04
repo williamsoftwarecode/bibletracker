@@ -1,7 +1,6 @@
 package com.william.bibletracker;
 
 import com.william.bibletracker.entity.User;
-import com.william.bibletracker.repository.BibleRepository;
 import com.william.bibletracker.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
