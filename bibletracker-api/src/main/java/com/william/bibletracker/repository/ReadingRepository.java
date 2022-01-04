@@ -1,7 +1,7 @@
 package com.william.bibletracker.repository;
 
+import com.william.bibletracker.repository.interfaces.ChaptersReadForBook;
 import com.william.bibletracker.entity.Reading;
-import com.william.bibletracker.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -33,4 +33,9 @@ public interface ReadingRepository extends JpaRepository<Reading, Long> {
             value = "SELECT COUNT(*) FROM reading WHERE username = ?1",
             nativeQuery = true)
     long getCompletedChaptersForUser(String username);
+
+    @Query(
+            value = "SELECT book AS book, COUNT(*) AS chaptersRead FROM reading WHERE username = ?1 GROUP BY book",
+            nativeQuery = true)
+    List<ChaptersReadForBook> getCompletedChaptersByBookForUser(String username);
 }

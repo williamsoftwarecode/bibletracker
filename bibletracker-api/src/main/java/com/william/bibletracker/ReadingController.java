@@ -1,6 +1,7 @@
 package com.william.bibletracker;
 
 import com.william.bibletracker.entity.BibleChapters;
+import com.william.bibletracker.repository.interfaces.ChaptersReadForBook;
 import com.william.bibletracker.entity.Reading;
 import com.william.bibletracker.repository.BibleRepository;
 import com.william.bibletracker.repository.ReadingRepository;
@@ -77,6 +78,11 @@ public class ReadingController {
     @GetMapping(value = "/getCompletedChapters/{username}")
     public long getCompletedChaptersForUser(@PathVariable String username) {
         return readingRepository.getCompletedChaptersForUser(username);
+    }
+
+    @GetMapping(value = "/getCompletedChaptersByBook/{username}")
+    public List<ChaptersReadForBook> getCompletedChaptersByBookForUser(@PathVariable String username) {
+        return readingRepository.getCompletedChaptersByBookForUser(username);
     }
 
     @GetMapping(value = "/getBible")
