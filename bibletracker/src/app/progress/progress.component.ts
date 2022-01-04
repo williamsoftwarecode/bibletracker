@@ -11,8 +11,8 @@ export class ProgressComponent implements OnInit {
 
   currentUser: string = "";
   numberCompletedChapters: number = 0;
-  percentCompletedChapsStr: string;
-  percentCompletedChapsNum: number;
+  percentCompletedChapsStr: string = "0";
+  percentCompletedChapsNum: number = 0;
 
   constructor(
     private hardCodedAuthenticationService: HardCodedAuthenticationService,

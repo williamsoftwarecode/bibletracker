@@ -1,4 +1,4 @@
-import { Component, ViewChild, Input } from '@angular/core';
+import { Component, ViewChild, Input, OnChanges, SimpleChanges } from '@angular/core';
 import {
   ApexNonAxisChartSeries,
   ApexPlotOptions,
@@ -22,12 +22,15 @@ export type ChartOptions = {
   templateUrl: './radialbar.component.html',
   styleUrls: ['./radialbar.component.css']
 })
-export class RadialbarComponent {
-  percentage: number = 20;
+export class RadialbarComponent implements OnChanges {
+  @Input() percentage: number;
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions> | any;
 
   constructor() {
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
     this.chartOptions = {
       series: [this.percentage],
       chart: {
