@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ChaptersReadForBook } from 'src/app/class/chapters-read-for-book';
 
 export class Reading {
   constructor(
@@ -32,6 +33,10 @@ export class ReadingDataService {
 
   getCompletedChaptersByUser(username: string) {
     return this.httpClient.get<number>(`http://localhost:8080/getCompletedChapters/${username}`);
+  }
+
+  getCompletedChaptersByBookForUser(username: string) {
+    return this.httpClient.get<ChaptersReadForBook[]>(`http://localhost:8080/getCompletedChaptersByBook/${username}`);
   }
 
   addReadChapter(username: string, book: string, chapter: number) {

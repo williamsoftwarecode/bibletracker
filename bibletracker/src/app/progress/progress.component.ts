@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChaptersReadForBook } from '../class/chapters-read-for-book';
 import { ReadingDataService } from '../service/data/reading-data.service';
 import { HardCodedAuthenticationService } from '../service/hard-coded-authentication.service';
 
@@ -14,6 +15,8 @@ export class ProgressComponent implements OnInit {
   percentCompletedChapsStr: string = "0";
   percentCompletedChapsNum: number = 0;
 
+  chaptersReadForBooks: ChaptersReadForBook[];
+
   constructor(
     private hardCodedAuthenticationService: HardCodedAuthenticationService,
     private readingService: ReadingDataService
@@ -28,6 +31,11 @@ export class ProgressComponent implements OnInit {
         this.percentCompletedChapsStr = this.percentCompletedChapsNum.toFixed(2);
       }
     ); 
+    this.readingService.getCompletedChaptersByBookForUser(this.currentUser).subscribe(
+      response => {
+        this.chaptersReadForBooks = response;
+      }
+    );
   }
 
 }
