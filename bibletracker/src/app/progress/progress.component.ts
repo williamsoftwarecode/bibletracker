@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as d3 from 'd3';
 import { ReadingDataService } from '../service/data/reading-data.service';
 import { HardCodedAuthenticationService } from '../service/hard-coded-authentication.service';
 

@@ -18,7 +18,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { ChaptersComponent } from './chapters/chapters.component'; 
 import { MatButtonToggleModule } from '@angular/material/button-toggle'; 
 import { MatSortModule } from '@angular/material/sort';
-import { ProgressComponent } from './progress/progress.component'; 
+import { ProgressComponent } from './progress/progress.component';
+import { RadialbarComponent } from './chart/radialbar/radialbar.component'; 
+import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ProgressComponent } from './progress/progress.component';
     WelcomeComponent,
     TrackComponent,
     ChaptersComponent,
-    ProgressComponent
+    ProgressComponent,
+    RadialbarComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { ProgressComponent } from './progress/progress.component';
     BrowserAnimationsModule, 
     MatButtonModule, 
     MatButtonToggleModule, 
-    MatSortModule
+    MatSortModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
