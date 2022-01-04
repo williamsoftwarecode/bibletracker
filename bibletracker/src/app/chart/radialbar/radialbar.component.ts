@@ -37,7 +37,7 @@ export class RadialbarComponent implements OnChanges {
         height: 350,
         type: "radialBar",
         toolbar: {
-          show: true
+          show: false
         }
       },
       plotOptions: {
