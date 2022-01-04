@@ -1,15 +1,19 @@
 <div class="container mt-5">
     <h1>Progress</h1>
     
-    <h2>Number of completed chapters: <br>{{ numberCompletedChapters }}/1189 [{{ percentCompletedChapsStr }}%]</h2>
+    <div class="card">
+        <h2 class="card-header text-center">Completed chapters</h2>
+        <div class="card-body">
+            <h2>Number of completed chapters: <br>{{ numberCompletedChapters }}/1189</h2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" [style.width]="percentCompletedChapsStr + '%'">
+                    <span *ngIf="(percentCompletedChapsNum >= 3)">
+                        {{ percentCompletedChapsStr }}%
+                    </span>
+                </div>
+            </div>
 
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" [style.width]="percentCompletedChapsStr + '%'">
-            <span *ngIf="(percentCompletedChapsNum >= 3)">
-                {{ percentCompletedChapsStr }}%
-            </span>
+            <app-radialbar [percentage]="percentCompletedChapsNum"></app-radialbar>
         </div>
     </div>
-
-    <app-radialbar [percentage]="percentCompletedChapsNum"></app-radialbar>
 </div>
