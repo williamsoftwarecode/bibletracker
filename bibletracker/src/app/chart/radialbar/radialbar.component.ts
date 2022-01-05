@@ -1,4 +1,5 @@
 import { Component, ViewChild, Input, OnChanges, SimpleChanges } from '@angular/core';
+
 import {
   ApexNonAxisChartSeries,
   ApexPlotOptions,
