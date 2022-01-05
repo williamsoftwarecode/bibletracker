@@ -9,8 +9,10 @@ import com.william.bibletracker.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin(origins = "http://192.168.0.203:4200")
 @RestController
@@ -82,7 +84,19 @@ public class ReadingController {
 
     @GetMapping(value = "/getCompletedChaptersByBook/{username}")
     public List<ChaptersReadForBook> getCompletedChaptersByBookForUser(@PathVariable String username) {
-        return readingRepository.getCompletedChaptersByBookForUser(username);
+        List<ChaptersReadForBook> unsorted = readingRepository.getCompletedChaptersByBookForUser(username);
+        List<ChaptersReadForBook> sorted = new ArrayList<>();
+
+        BibleChaptersUtils.getBibleChapters().forEach((book, chaptersRead) -> {
+            Optional<ChaptersReadForBook> chaptersReadForBook = unsorted.stream()
+                    .filter(crfb -> crfb.getBook().equals(book))
+                    .findFirst();
+            if (chaptersReadForBook.isPresent()) {
+                sorted.add(chaptersReadForBook.get());
+            }
+        });
+
+        return sorted;
     }
 
     @GetMapping(value = "/getBible")
