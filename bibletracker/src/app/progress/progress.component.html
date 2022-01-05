@@ -21,6 +21,7 @@
 
     <div class="card">
         <h2 class="card-header text-center">Completed chapters by Book</h2>
+        <app-heatmap></app-heatmap>
         <div class="card-body">
             <p *ngFor="let book of chaptersReadForBooks">{{ book.book }}: {{ book.chaptersRead }}</p>
         </div>

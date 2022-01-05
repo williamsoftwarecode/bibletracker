@@ -21,6 +21,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { ProgressComponent } from './progress/progress.component';
 import { RadialbarComponent } from './chart/radialbar/radialbar.component'; 
 import { NgApexchartsModule } from "ng-apexcharts";
+import { HeatmapComponent } from './chart/heatmap/heatmap.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NgApexchartsModule } from "ng-apexcharts";
     TrackComponent,
     ChaptersComponent,
     ProgressComponent,
-    RadialbarComponent
+    RadialbarComponent,
+    HeatmapComponent
   ],
   imports: [
     BrowserModule,
