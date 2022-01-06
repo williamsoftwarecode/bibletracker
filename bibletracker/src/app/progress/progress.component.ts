@@ -25,9 +25,7 @@ export class ProgressComponent implements OnInit {
     private hardCodedAuthenticationService: HardCodedAuthenticationService,
     private bibleChaptersService: BibleChaptersDataService, 
     private readingService: ReadingDataService
-  ) { }
-
-  ngOnInit(): void {
+  ) { 
     this.currentUser = this.hardCodedAuthenticationService.getCurrentUser();
     this.readingService.getCompletedChaptersByUser(this.currentUser).subscribe(
       response => {
@@ -36,6 +34,11 @@ export class ProgressComponent implements OnInit {
         this.percentCompletedChapsStr = this.percentCompletedChapsNum.toFixed(2);
       }
     ); 
+  }
+
+  ngOnInit(): void {
+    // Delay after constructor as this takes a bit of time to complete
+    // For better UI experience
     this.readingService.getCompletedChaptersByBookForUser(this.currentUser).subscribe(
       response => {
         this.chaptersReadForBooks = response;

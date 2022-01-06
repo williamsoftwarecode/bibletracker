@@ -9,15 +9,19 @@
                     <span *ngIf="lastReadDate">
                         <h2>Last read: </h2>
                             <h3>
-                                {{ lastReadDate | date: "MMM, d yyyy @ HH:mm:ss" }} 
-                                <br> 
-                                {{ lastReadBook }} {{ lastReadChapter }}
+                                <strong>
+                                    {{ lastReadDate | date: "MMM, d yyyy @ HH:mm:ss" }} 
+                                    <br> 
+                                    {{ lastReadBook }} {{ lastReadChapter }}
+                                </strong>
                             </h3>
                             <br>
                     </span>
                     <p>Track your daily reading by clicking on the book and select the chapter you desire to read today. This will add it to your daily reading history.</p>
                     <br>
-                    <img class="img-fluid mx-auto d-block" routerLink="/track" src="../../assets/track-example.jpg">
+                    <img class="img-fluid mx-auto d-block" routerLink="/track" src="../../assets/track-book-example.jpg">
+                    <br>
+                    <img class="img-fluid mx-auto d-block" routerLink="/track" src="../../assets/track-chapter-example.jpg">
                     <br><br>
                     <p>Click <a routerLink="/track">here</a> to start <strong>tracking</strong> your daily Bible reading!</p>
                 </div>
@@ -39,6 +43,23 @@
             <div class="card mt-5">
                 <h2 class="card-header text-center" routerLink="/progress">Progress</h2>
                 <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>See how much of the Bible you have completed</p> 
+                            <img class="img-fluid mx-auto d-block" routerLink="/progress" src="../../assets/progress-radialbar.jpg">
+                            <br>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>A book based heatmap is generated for visualization</p> 
+                            <img class="img-fluid mx-auto d-block" routerLink="/progress" src="../../assets/progress-heatmap.jpg">
+                            <br>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>See your reading progress book by book</p>
+                            <img class="img-fluid mx-auto d-block" routerLink="/progress" src="../../assets/progress-bar-book.jpg">
+                            <br>
+                        </div>
+                    </div>
                     <br><br>
                     <p>Click <a routerLink="/progress">here</a> to <strong>view your progress</strong> for reading the entire Bible!</p>
                 </div>
