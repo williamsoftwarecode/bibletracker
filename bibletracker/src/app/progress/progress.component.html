@@ -21,9 +21,19 @@
 
     <div class="card">
         <h2 class="card-header text-center">Completed chapters by Book</h2>
-        <app-heatmap></app-heatmap>
         <div class="card-body">
-            <p *ngFor="let book of chaptersReadForBooks">{{ book.book }}: {{ book.chaptersRead }}</p>
+            <app-heatmap></app-heatmap>
+            <div *ngFor="let book of chaptersReadForBooksPercent">
+                <h1>{{ book.book }}: {{ book.chaptersRead }}/{{ book.totalChapters }}</h1>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" [style.width]="book.percentageComplete + '%'">
+                        <span *ngIf="(book.percentageComplete  >= 3)">
+                            {{ book.percentageComplete  }}%
+                        </span>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
     </div>
 </div>

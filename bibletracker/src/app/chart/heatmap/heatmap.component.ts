@@ -118,9 +118,6 @@ export class HeatmapComponent {
         enabled: false
       },
       colors: ["#008FFB"],
-      title: {
-        text: "Books of the Bible (Heatmap)"
-      }, 
       xaxis: {
         tooltip: {
           enabled: false
