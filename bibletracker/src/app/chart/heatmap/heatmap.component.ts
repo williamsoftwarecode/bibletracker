@@ -158,7 +158,7 @@ export class HeatmapComponent {
 
     if (this.allBibleChapters.length === 0 || 
       this.chaptersReadForBooks.length === 0) {
-      return;
+      return [];
     }
 
     var i = 0;
