@@ -4,23 +4,23 @@
     <h3>Select your book for today: </h3>
     
     <div class="row">        
-        <div class="col-7">
+        <div class="col-sm-6 col-md-7 col-lg-7">
             <div class="card">
                 <h2 class="card-header text-center">OT</h2>
                 <div class="card-body">
                     <div class="row">        
-                        <div class="col">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             <br>
                             <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
                                 <button mat-raised-button [routerLink]="'/track/' + bibleChapter.book" *ngIf="i >= 0 && i < 13">{{ bibleChapter.book }}</button>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
                                 <button mat-raised-button [routerLink]="'/track/' + bibleChapter.book" *ngIf="i >= 13 && i < 26">{{ bibleChapter.book }}</button>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
                                 <button mat-raised-button [routerLink]="'/track/' + bibleChapter.book" *ngIf="i >= 26 && i < 39">{{ bibleChapter.book }}</button>
                             </ul>
@@ -29,17 +29,17 @@
                 </div>
             </div>
         </div>
-        <div class="col-5">
+        <div class="col-sm-6 col-md-5 col-lg-5">
             <div class="card">
                 <h2 class="card-header text-center">NT</h2>
                 <div class="card-body">
                     <div class="row">     
-                        <div class="col">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
                             <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
                                 <button mat-raised-button [routerLink]="'/track/' + bibleChapter.book" *ngIf="i >= 39 && i < 52">{{ bibleChapter.book }}</button>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
                             <ul *ngFor="let bibleChapter of bibleChapters; let i = index">
                                 <button mat-raised-button [routerLink]="'/track/' + bibleChapter.book" *ngIf="i >= 52 && i < 66">{{ bibleChapter.book }}</button>
                             </ul>
