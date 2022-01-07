@@ -5,38 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="483af0e8-9b70-4446-a472-c64471c61404" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/3rdpartylicenses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/history-example-old.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/history-example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/progress-bar-book.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/progress-heatmap.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/progress-radialbar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/track-book-example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/track-chapter-example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/track-example-old.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/main.59d9818b8cb506ea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/polyfills.4e18508ba74b6cf4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/runtime.45e235879357ebff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/styles.448f44e072ccd373.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BibleTracker.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/src/main/java/com/william/bibletracker/BibletrackerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/src/main/java/com/william/bibletracker/BibletrackerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker/src/app/chapters/chapters.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/src/app/chapters/chapters.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibletracker/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/main.59d9818b8cb506ea.js" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/main.45f21d0b2ef9b1ed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker/build/libs/bibletracker.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/build/libs/bibletracker.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/src/app/app-routing.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
