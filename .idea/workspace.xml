@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="483af0e8-9b70-4446-a472-c64471c61404" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/3rdpartylicenses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/history-example-old.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/history-example.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/progress-bar-book.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/progress-heatmap.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/progress-radialbar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/track-book-example.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/track-chapter-example.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/assets/track-example-old.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/main.59d9818b8cb506ea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/polyfills.4e18508ba74b6cf4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/runtime.45e235879357ebff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/static/styles.448f44e072ccd373.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BibleTracker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/src/main/java/com/william/bibletracker/BibletrackerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/src/main/java/com/william/bibletracker/BibletrackerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker/src/app/chapters/chapters.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/src/app/chapters/chapters.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibletracker/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bibletracker/src/environments/environment.prod.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bibletracker" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bibletracker" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bibletracker" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23NJ6Gu9wt296iADUv6XVGubgfc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bibletracker-api/src/main/resources/static" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bibletracker-api/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bibletracker-api/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/bibletracker-api/config" />
+      <recent name="$PROJECT_DIR$/bibletracker/static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.BibleTrackerJar">
+    <configuration name="BibleTracker [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BibleTracker [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BibleTracker [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BibleTrackerJar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/bibletracker-api/build/libs/bibletracker-api-0.0.1-SNAPSHOT.jar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.BibleTracker [jar]" />
+      <item itemvalue="Gradle.BibleTracker [clean]" />
+      <item itemvalue="Gradle.BibleTracker [assemble]" />
+      <item itemvalue="JAR Application.BibleTrackerJar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.BibleTracker [assemble]" />
+        <item itemvalue="Gradle.BibleTracker [clean]" />
+        <item itemvalue="Gradle.BibleTracker [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="483af0e8-9b70-4446-a472-c64471c61404" name="Changes" comment="" />
+      <created>1641568438010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641568438010</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

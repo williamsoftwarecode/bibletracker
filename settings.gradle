@@ -1,0 +1,3 @@
+rootProject.name = 'bibletracker'
+
+include 'bibletracker', 'bibletracker-api'

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: "https://john316.ddns.net"
+  baseUrl: "http://john316.ddns.net"
 };

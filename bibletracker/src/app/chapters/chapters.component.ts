@@ -20,15 +20,15 @@ export class ChaptersComponent implements OnInit {
   readChapters: number[] = [];
 
   constructor(
-    private route: ActivatedRoute, 
-    private bibleChaptersService: BibleChaptersDataService, 
-    private readingService: ReadingDataService, 
+    private route: ActivatedRoute,
+    private bibleChaptersService: BibleChaptersDataService,
+    private readingService: ReadingDataService,
     private hardCodedAuthenticationService: HardCodedAuthenticationService) { }
 
   ngOnInit(): void {
     this.bookName = this.route.snapshot.params["bookName"];
     this.currentUser = this.hardCodedAuthenticationService.getCurrentUser();
-    
+
     this.readingService.retrieveReadingsByBook(this.currentUser, this.bookName).subscribe(
       response => {
         let readResponse = response;
@@ -39,9 +39,9 @@ export class ChaptersComponent implements OnInit {
     this.bibleChaptersService.retrieveBibleBooks().subscribe(
       response => {
         this.bibleChapters = response;
-        
-        let bibleChapter = this.bibleChapters.find(bc => bc.book === this.bookName); 
-        
+
+        let bibleChapter = this.bibleChapters.find(bc => bc.book === this.bookName);
+
         if (bibleChapter !== undefined) {
           this.totalChapters = bibleChapter.chapter;
           this.allChapters = Array(this.totalChapters).fill(1).map((x,i)=>i+1);
@@ -51,7 +51,7 @@ export class ChaptersComponent implements OnInit {
   }
 
   onChange($event: { value: any; }) {
-    let chapter = $event.value; 
+    let chapter = $event.value;
 
     // Read => Not Read
     if (this.readChapters.indexOf(chapter) != -1) {
@@ -60,29 +60,10 @@ export class ChaptersComponent implements OnInit {
         this.readChapters.splice(index, 1);
       }
 
-      this.readingService.deleteReadChapter(this.currentUser, this.bookName, chapter).subscribe(
-        response => {
-          if (response) {
-            console.log("Read => Not read");
-            console.log(this.readChapters); 
-          } else {
-            console.log("Unsuccessful")
-          }
-        }
-      );
+      this.readingService.deleteReadChapter(this.currentUser, this.bookName, chapter).subscribe();
     } else {
       this.readChapters.push(chapter);
-      
-      this.readingService.addReadChapter(this.currentUser, this.bookName, chapter).subscribe(
-        response => {
-          if (response) {
-            console.log("Not read => Read");
-            console.log(this.readChapters); 
-          } else {
-            console.log("Unsuccessful")
-          }
-        }
-      );
+      this.readingService.addReadChapter(this.currentUser, this.bookName, chapter).subscribe();
     }
   }
 

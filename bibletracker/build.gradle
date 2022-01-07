@@ -1,0 +1,22 @@
+plugins {
+  id 'java'
+  id "com.moowork.node" version "1.2.0"
+}
+
+//java {
+//  toolchain {
+//    languageVersion = JavaLanguageVersion.of(17)
+//  }
+//}
+
+node {
+  version = '16.3.1'
+  npmVersion = '8.1.2'
+  download = false
+}
+
+//jar.dependsOn 'npm_run_build'
+
+jar {
+  from 'dist/bibletracker' into 'static'
+}
