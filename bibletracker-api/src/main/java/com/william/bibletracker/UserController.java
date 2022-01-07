@@ -5,7 +5,7 @@ import com.william.bibletracker.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.Map;
 
 @CrossOrigin
 @RestController
@@ -14,22 +14,25 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping(value = "/createUser/{username}/{password}")
-    public String createUser(@PathVariable String username, @PathVariable String password) {
+    @PostMapping(value = "/createUser")
+    public String createUser(@RequestBody Map<String,String> body) {
+        String username = body.get("username");
+        String password = body.get("password");
+
         if (userRepository.getByUsername(username) == null) {
             User user = new User(username, password);
             userRepository.save(user);
-            List<User> allUsers = userRepository.findAll();
-            System.out.println("All users: " + allUsers);
-
-            return String.valueOf(user.getUsername());
+            return "User " + String.valueOf(user.getUsername()) + " created successfully!";
         } else {
             return "Username already taken!";
         }
     }
 
-    @GetMapping(value = "/login/{username}/{password}")
-    public boolean login(@PathVariable String username, @PathVariable String password) {
+    @PostMapping(value = "/login")
+    public boolean login(@RequestBody Map<String,String> body) {
+        String username = body.get("username");
+        String password = body.get("password");
+
         User user = userRepository.getByUsername(username);
         if (user != null) {
             return user.isPasswordCorrect(password);
