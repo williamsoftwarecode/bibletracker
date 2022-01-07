@@ -22,6 +22,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { RadialbarComponent } from './chart/radialbar/radialbar.component'; 
 import { NgApexchartsModule } from "ng-apexcharts";
 import { HeatmapComponent } from './chart/heatmap/heatmap.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HeatmapComponent } from './chart/heatmap/heatmap.component';
     ChaptersComponent,
     ProgressComponent,
     RadialbarComponent,
-    HeatmapComponent
+    HeatmapComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,10 @@ export class UserDataService {
   constructor(private httpClient: HttpClient) { }
 
   createUser(username: string, password: string): Observable<string> {
-    return this.httpClient.post<string>(this.baseUrl + "/createUser", {username: username, password: password});
+    return this.httpClient.post(
+      this.baseUrl + "/createUser", 
+      {username: username, password: password}, 
+      {responseType: 'text'});
   }
 
   authenticateLogin(username: string, password: string): Observable<boolean> {

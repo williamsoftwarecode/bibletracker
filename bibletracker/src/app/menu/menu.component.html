@@ -15,6 +15,7 @@
                 </div>
                 <div class="navbar-nav navbar-collapse justify-content-end">
                     <a mat-button [routerLink]="'/welcome/' + getUsername()" *ngIf=loggedIn()>Home</a>
+                    <a mat-button routerLink="signup" *ngIf=!loggedIn()>Sign Up</a>
                     <a mat-button routerLink="login" *ngIf=!loggedIn()>Login</a>
                     <a mat-button routerLink="logout" *ngIf=loggedIn()>Logout</a>
                 </div>

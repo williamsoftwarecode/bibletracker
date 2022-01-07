@@ -7,12 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ProgressComponent } from './progress/progress.component';
 import { RouteGuardService } from './service/route-guard.service';
+import { SignupComponent } from './signup/signup.component';
 import { TrackComponent } from './track/track.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "login", component: LoginComponent },
+  { path: "signup", component: SignupComponent },
   { path: "welcome/:name", component: WelcomeComponent, canActivate:[RouteGuardService]},
   { path: "track", component: TrackComponent, canActivate:[RouteGuardService]},
   { path: "track/:bookName", component: ChaptersComponent, canActivate:[RouteGuardService]},

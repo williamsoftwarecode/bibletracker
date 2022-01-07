@@ -1,8 +1,7 @@
 <div class="container mt-5">
-
     <div class="card">
         <div class="card-body">
-            <h1>Login</h1>
+            <h1>Sign Up</h1>
             
             <br>
             
@@ -14,12 +13,12 @@
             </div>
 
             <div>
-                <button mat-raised-button color="primary" (click)=handleLogin()>Login</button>
+                <button mat-raised-button color="primary" (click)=createAccount()>Create Account</button>
                 <br><br>
             </div>
 
-            <div class="alert alert-warning" *ngIf="displayInvalidMessage">
-                {{ invalidMessage }}
+            <div class="alert alert-success" *ngIf="serverMessage">
+                {{ serverMessage }}
             </div>
         </div>
     </div>
