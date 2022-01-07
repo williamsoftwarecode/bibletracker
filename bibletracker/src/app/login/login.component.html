@@ -6,16 +6,26 @@
             
             <br>
             
-            <div>
-                Username: <input type="text" name="username" [(ngModel)]="username">
-                <br><br>
-                Password: <input type="password" name="password" [(ngModel)]="password">
-                <br><br><br>
-            </div>
+            <mat-form-field  appearance="fill">
+                <mat-label>Username</mat-label> 
+                <input matInput type="text" name="username" [(ngModel)]="username">
+            </mat-form-field>
+            
+            <br>
+            
+            <mat-form-field  appearance="fill">
+                <mat-label>Password</mat-label> 
+                <input matInput type="password" name="password" [(ngModel)]="password">
+            </mat-form-field>
+            
+            <br>
+            <br>
 
             <div>
                 <button mat-raised-button color="primary" (click)=handleLogin()>Login</button>
-                <br><br>
+                <br>
+                <br>
+                <br>
             </div>
 
             <div class="alert alert-warning" *ngIf="displayInvalidMessage">

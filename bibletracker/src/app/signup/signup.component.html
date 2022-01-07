@@ -5,20 +5,37 @@
             
             <br>
             
-            <div>
-                Username: <input type="text" name="username" [(ngModel)]="username">
-                <br><br>
-                Password: <input type="password" name="password" [(ngModel)]="password">
-                <br><br><br>
-            </div>
+            <mat-form-field  appearance="fill">
+                <mat-label>New Username</mat-label> 
+                <input matInput [formControl]="usernameFormControl" type="text" name="username" [(ngModel)]="username">
+                <mat-error *ngIf="usernameFormControl.hasError('required')">
+                    Username is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            
+            <br>
+            
+            <mat-form-field  appearance="fill">
+                <mat-label>New Password</mat-label> 
+                <input matInput type="password" [formControl]="passwordFormControl" name="password" [(ngModel)]="password">
+                <mat-error *ngIf="passwordFormControl.hasError('required')">
+                    Password is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            
+            <br>
+            <br>
 
             <div>
                 <button mat-raised-button color="primary" (click)=createAccount()>Create Account</button>
-                <br><br>
+                <br>
+                <br>
+                <br>            
             </div>
 
             <div class="alert alert-success" *ngIf="serverMessage">
-                {{ serverMessage }}
+                <p>{{ serverMessage }}</p>
+                <button mat-raised-button routerLink="/login">Go to login page</button>
             </div>
         </div>
     </div>
